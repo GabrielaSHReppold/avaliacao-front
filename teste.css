@@ -11,7 +11,9 @@
     90% { transform: translate(-2px, 2px); }
     100% { transform: translate(0, 0); }
   }
-
+  body {
+    overflow-x: hidden;
+}
   h1 {
     color: #115718;
     margin: 0;
