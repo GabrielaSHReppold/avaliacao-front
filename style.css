@@ -11,17 +11,18 @@
     90% { transform: translate(-2px, 2px); }
     100% { transform: translate(0, 0); }
   }
-  body {
+body {
     overflow-x: hidden;
 }
-  h1 {
+
+h1 {
     color: #115718;
     margin: 0;
     padding: 20px 0;   /* espaçamento interno */
     animation: tremor 0.5s infinite;  /* Aplica a animação com duração de 0.5 segundos e repetição infinita */
-  }
+}
 
-  @keyframes slideInFromLeft {
+@keyframes slideInFromLeft {
     0% {
       opacity: 0;
       transform: translateX(-100%);
@@ -30,15 +31,15 @@
       opacity: 1;
       transform: translateX(0);
     }
-  }
+}
   
-  .card {
+.card {
     border: 1px solid black;
     margin: 15px;
     animation: slideInFromLeft 1s ease-out;
-  }
+}
 
-  @keyframes growShrink {
+@keyframes growShrink {
     0% {
       transform: scale(1);
     }
@@ -48,40 +49,40 @@
     100% {
       transform: scale(1);
     }
-  }
+}
   
-  .card:hover {
+.card:hover {
     animation: growShrink 0.5s ease-in-out;
-  }
+}
   
 
-  main {
+main {
     background-image: url(./img/fundo.jpg); /* imagem de fundo do main */ 
     background-size: cover;                 /* imagem de fundo cobre tudo */
     background-position: bottom;            
     background-repeat: no-repeat;           /* imagem de fundo não repete */
     min-height: 100vh;
     overflow: hidden;
-  }
+}
   
-  .card {
+.card {
     border: 1px solid black;
     margin: 15px; 
-  }
+}
   
-  .carousel-item {
+.carousel-item {
     text-align: center;
-  }
+}
   
-  .carousel-container {
+.carousel-container {
     position: relative;
     z-index: 1;
-  }
+}
   
-  .carousel-inner {
+.carousel-inner {
     position: relative;
     z-index: 1;
-  }
+}
   
 @keyframes rotateButton {
   0% {
@@ -97,7 +98,7 @@ button {
 }
 
 
-  .background-image {
+.background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -105,17 +106,17 @@ button {
     height: 100%;
     z-index: 0;
     opacity: 0.2; 
-  }
+}
   
-  #paginacao {
+#paginacao {
     margin-top: 20px;
-  }
+}
   
-  footer {
+footer {
     background-color: #151916;
     color: #569D4E;
     font-size: small;
     font-weight: bold;
     padding: 10px 0;
-  }
+}
   
