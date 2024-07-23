@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,26 +15,34 @@
         <main class="container-fluid vh-100">
             <section class="row h-100 d-flex justify-content-center align-items-center">
                 
-                <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xxl-3 shadow rounded py-5 px-2 px-md-3 px-lg-5">
+                <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xxl-3 py-1 px-md-3 px-lg-2">
 
                     <div class="container m-5 " >
-                        <!-- texto , coloquei um ms mas nada mudou -->
+
                         <div class="row mb-5">
                             <div class="col">
                                 <h2 class="fs-4 text-center" style="color: rgb(134, 255, 93);">Detalhes do personagem:</h2>
                             </div>
                         </div>
+                        <div>Imagem: <img id="imagem" src="" alt="Imagem do personagem"></div> <br>
 
-                        <div style="color: aliceblue;">
+                        <div class=" text-center" style=" color: rgb(134, 255, 93);">
                             <col>
                                 <row>Nome: <span id="nome"></span></row> <br>
-                                <row>Genero: <span id="genero"></span></row> <br>
+                                <row>Gênero: <span id="genero"></span></row> <br>
+                                <row>Status: <span id="status"></span></row> <br>
+                                <row>Espécie: <span id="especie"></span></row> <br>
+                                <row>Tipo: <span id="tipo"></span></row> <br>
+                                <row>Origem: <span id="origem"></span></row> <br>
+                                <row>Localização Atual: <span id="localizacao"></span></row> <br>
                                 <th>Episodios: </th> <br>
-                                <!-- <tr>TR 1</tr> <br>
-                                <tr>TR 2</tr> <br>
-                                <tr>TR 3</tr> <br> -->
+
                             </col>
-                        </div>
+                        </div> 
+
+
+
+
 
                         <div class="modal-footer justify-content-center mt-4">
                             <button type="button" class="btn btn-secondary custom-button" onclick="window.location.href='index.html'">
@@ -59,4 +67,59 @@
     <script src="./detalhes.js"></script>
 </body>
 
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Detalhes</title>
+</head>
+
+<body>
+
+    <header></header>
+    <main class="container-fluid vh-100">
+        <section class="row h-100 d-flex justify-content-center align-items-center">
+            <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xxl-3 py-1 px-md-3 px-lg-2">
+                <div class="container m-5">
+                    <div class="row mb-5">
+                        <div class="col">
+                            <h2 class="fs-4 text-center" style="color: rgb(134, 255, 93);">Detalhes do personagem:</h2>
+                        </div>
+                    </div>
+                    <div>Imagem: <img id="imagem" src="" alt="Imagem do personagem"></div> <br>
+                    <div class="text-center" style="color: rgb(134, 255, 93);">
+                        <div>Nome: <span id="nome"></span></div> <br>
+                        <div>Gênero: <span id="genero"></span></div> <br>
+                        <div>Status: <span id="status"></span></div> <br>
+                        <div>Espécie: <span id="especie"></span></div> <br>
+                        <div>Tipo: <span id="tipo"></span></div> <br>
+                        <div>Origem: <span id="origem"></span></div> <br>
+                        <div>Localização Atual: <span id="localizacao"></span></div> <br>
+                        <div>Episódios:</div> <br>
+                        <ul id="episodios">
+                            <!-- Lista de episódios será inserida aqui -->
+                        </ul>
+                    </div>
+                    <div class="modal-footer justify-content-center mt-4">
+                        <button type="button" class="btn btn-secondary custom-button" onclick="window.location.href='index.html'">
+                            Voltar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./detalhes.js"></script>
+</body>
+
 </html>
+
+
