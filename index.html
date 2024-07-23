@@ -43,7 +43,10 @@
         </nav>
     </header>
 
-    <main class="container-fluid mt-5">
+    <main class="container-fluid  vh-100 mt-5">
+       <!-- acho que minhas col e row estao desorganizadas, só que se tento concertar eu quebro  -->
+       <section class="row d-flex justify-content-center align-items-center"></section>
+        <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xxl-3">  <!-- não consigo acertar a resposividade --></div>
         <div class="row">
             <div id="carouselExample" class="carousel slide carousel-container">
                 <div class="carousel-inner" id="carousel-inner">
@@ -62,9 +65,10 @@
                     <span>Próximo</span>
                 </button>
             </div>
-        </div>          
-    </main>
-
+            </div>
+        </section>
+    </main> 
+    
     <footer>
         <div class="container pt-5 pb-5">
             <div class="row text-center pb-5">
@@ -86,11 +90,30 @@
             </div>
             <div class="row text-center pt-5">
                 <div class="col">
-                    <div>&copy;Desenvolvido por: <span class="text-light">Gabriela Schröer Heinen Reppold</span>- 2024</div>
+                    <div>&copy;Desenvolvido por: <span class="text-light">Gabriela Schröer Heinen Reppold</span> - 2024</div>
                 </div>
             </div>
         </div>
     </footer>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalDetalhes" tabindex="-1" aria-labelledby="modalDetalhesLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalDetalhesLabel">Detalhes do Personagem</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Detalhes do personagem serão carregados aqui -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script> 

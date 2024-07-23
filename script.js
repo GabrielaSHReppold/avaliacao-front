@@ -76,8 +76,9 @@ const createCard = (imgSrc, nomePersonagem, especie, status, id) => {
   statusElement.className = 'card-text';
   statusElement.textContent = status;
 
+  /* onclick="window.location.href='index.html' */
   const btn = document.createElement('a');
-  btn.href = `./detalhes-gab.html?id=${id}`;
+  btn.href = `./detalhes.html?id=${id}`;
   btn.className = 'btn btn-light btn-sm stretched-link';
   btn.textContent = "Saber Mais";
 
